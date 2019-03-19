@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProjectManagementLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:ProjectManagementLibrary.HighRiskTask">
+            <summary>
+            Holds information about a task in a project. High risk projects are of more importance than regular tasks.
+            </summary>
+        </member>
+        <member name="M:ProjectManagementLibrary.HighRiskTask.#ctor(System.String,ProjectManagementLibrary.TaskType,System.Double)">
+            <summary>
+            Constructor for task.
+            </summary>
+            <param name="taskName">Name of task</param>
+            <param name="taskType">Type of task</param>
+            <param name="duration">How long task should take (in minutes)</param>
+        </member>
+        <member name="M:ProjectManagementLibrary.HighRiskTask.calculateEstimatedDuration">
+            <summary>
+            Calculates the estimated duration in minutes based on type of task.
+            </summary>
+            <returns>The amount of time (in minutes) that the task should take. It is double the amount 
+            of the base class because this is high risk.</returns>
+        </member>
+        <member name="T:ProjectManagementLibrary.Task">
+            <summary>
+            Holds information about a task in a project.
+            </summary>
+        </member>
+        <member name="F:ProjectManagementLibrary.Task.taskName">
+            <summary>
+            Name of task
+            </summary>
+        </member>
+        <member name="F:ProjectManagementLibrary.Task.taskType">
+            <summary>
+            Type of task
+            </summary>
+        </member>
+        <member name="F:ProjectManagementLibrary.Task.duration">
+            <summary>
+            How long the task should take (in minutes)
+            </summary>
+        </member>
+        <member name="P:ProjectManagementLibrary.Task.TaskName">
+            <summary>
+            Name of task. Ensures that task name has a value.
+            </summary>
+        </member>
+        <member name="P:ProjectManagementLibrary.Task.TaskType">
+            <summary>
+            Type of task. 
+            </summary>
+        </member>
+        <member name="P:ProjectManagementLibrary.Task.Duration">
+            <summary>
+            How long task should take (in minutes). Ensures that duration is a positive value, and not zero.
+            </summary>
+        </member>
+        <member name="M:ProjectManagementLibrary.Task.#ctor(System.String,ProjectManagementLibrary.TaskType,System.Double)">
+            <summary>
+            Constructor for task.
+            </summary>
+            <param name="taskName">Name of task</param>
+            <param name="taskType">Type of task</param>
+            <param name="duration">How long task should take (in minutes)</param>
+        </member>
+        <member name="M:ProjectManagementLibrary.Task.calculateEstimatedDuration">
+            <summary>
+            Calculates the estimated duration in minutes based on type of task.
+            </summary>
+            <returns>The amount of time (in minutes) that the task should take.</returns>
+        </member>
+        <member name="T:ProjectManagementLibrary.TaskList">
+            <summary>
+            Holds the logic and information of a group of tasks.
+            </summary>
+        </member>
+        <member name="P:ProjectManagementLibrary.TaskList.Tasks">
+            <summary>
+            Used to access and manage the task list.
+            </summary>
+        </member>
+        <member name="M:ProjectManagementLibrary.TaskList.#ctor">
+            <summary>
+            Default constructor creates an empty taskList
+            </summary>
+        </member>
+        <member name="M:ProjectManagementLibrary.TaskList.#ctor(System.Collections.Generic.List{ProjectManagementLibrary.Task})">
+            <summary>
+            Constructor takes in a tasklist.
+            </summary>
+            <param name="taskList"></param>
+        </member>
+        <member name="P:ProjectManagementLibrary.TaskList.TotalEstimatedDuration">
+            <summary>
+            Calculates the total estimated duration of all tasks in the list.
+            </summary>
+        </member>
+        <member name="M:ProjectManagementLibrary.TaskList.AddNewTask(ProjectManagementLibrary.Task)">
+            <summary>
+            Adds a task to the task list.
+            The task object taken in as a paramater will be copied, so the list will
+            reference a different object.
+            </summary>
+            <param name="task">The task information to be added to the list</param>
+        </member>
+        <member name="M:ProjectManagementLibrary.TaskList.RemoveTask(System.String)">
+            <summary>
+            Removes task from task list
+            </summary>
+            <param name="taskName">Name of task to be removed</param>
+        </member>
+        <member name="M:ProjectManagementLibrary.TaskList.SearchTaskByName(System.String)">
+            <summary>
+            Searches the task list for a task with a specific name.
+            </summary>
+            <param name="taskName">Name of task to be returned</param>
+            <returns>Either task object with same task name, or null.</returns>
+        </member>
+        <member name="T:ProjectManagementLibrary.TaskType">
+            <summary>
+            The different types of tasks.
+            </summary>
+        </member>
+        <member name="F:ProjectManagementLibrary.TaskType.RESEARCH">
+            <summary>
+            Tasks in research phase
+            </summary>
+        </member>
+        <member name="F:ProjectManagementLibrary.TaskType.REQUIREMENTS">
+            <summary>
+            Tasks in requirements phase
+            </summary>
+        </member>
+        <member name="F:ProjectManagementLibrary.TaskType.DESIGN">
+            <summary>
+            Tasks in design phase
+            </summary>
+        </member>
+        <member name="F:ProjectManagementLibrary.TaskType.IMPLEMENTATION">
+            <summary>
+            Tasks in implementation phase
+            </summary>
+        </member>
+        <member name="F:ProjectManagementLibrary.TaskType.TESTING">
+            <summary>
+            Tasks in testing phase
+            </summary>
+        </member>
+    </members>
+</doc>

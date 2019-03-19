@@ -1,0 +1,7 @@
+D:\Documents\Word Files\School\Coding\C#.NET\PROG37721\ProjectManagementSystem\ProjectManagementLibrary\bin\Debug\ProjectManagementLibrary.dll
+D:\Documents\Word Files\School\Coding\C#.NET\PROG37721\ProjectManagementSystem\ProjectManagementLibrary\bin\Debug\ProjectManagementLibrary.pdb
+D:\Documents\Word Files\School\Coding\C#.NET\PROG37721\ProjectManagementSystem\ProjectManagementLibrary\obj\Debug\ProjectManagementLibrary.csprojAssemblyReference.cache
+D:\Documents\Word Files\School\Coding\C#.NET\PROG37721\ProjectManagementSystem\ProjectManagementLibrary\obj\Debug\ProjectManagementLibrary.csproj.CoreCompileInputs.cache
+D:\Documents\Word Files\School\Coding\C#.NET\PROG37721\ProjectManagementSystem\ProjectManagementLibrary\obj\Debug\ProjectManagementLibrary.dll
+D:\Documents\Word Files\School\Coding\C#.NET\PROG37721\ProjectManagementSystem\ProjectManagementLibrary\obj\Debug\ProjectManagementLibrary.pdb
+D:\Documents\Word Files\School\Coding\C#.NET\PROG37721\ProjectManagementSystem\ProjectManagementLibrary\bin\Debug\ProjectManagementLibrary.xml
